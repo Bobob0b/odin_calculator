@@ -4,8 +4,19 @@ let num2;
 let operator;
 
 
-
-
+// evaluates the operator and calls the appropriate calculation function
+function operate(a, b, op) {
+    switch (op) {
+        case "+":
+            return add(a, b);
+        case "-":
+            return sub(a, b);
+        case "*":
+            return mul(a, b);
+        case "/":
+            return div(a, b);
+    }
+}
 
 
 // functions for calculation
